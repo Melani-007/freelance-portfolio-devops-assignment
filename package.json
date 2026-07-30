@@ -1,0 +1,11 @@
+{
+  "name": "freelance-portfolio-devops-assignment",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website for a freelancing agency",
+  "type": "module",
+  "scripts": {
+    "lint": "node --check src/scripts/app.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js"
+  }
+}
