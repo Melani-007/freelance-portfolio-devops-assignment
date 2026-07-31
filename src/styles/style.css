@@ -774,3 +774,133 @@ img {
     padding: 26px;
   }
 }
+
+/* =========================
+   Skills Section
+========================= */
+
+.skills-section {
+  padding: 110px 24px;
+  background: #f7f8ff;
+}
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 70px;
+}
+
+.skills-content h3 {
+  margin-bottom: 18px;
+  color: #172033;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.skills-content > p {
+  margin-bottom: 28px;
+  color: #667085;
+  line-height: 1.8;
+}
+
+.skills-list {
+  display: grid;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  position: relative;
+  padding-left: 32px;
+  color: #344054;
+  font-weight: 600;
+}
+
+.skills-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: #5858e8;
+  border-radius: 50%;
+  font-size: 0.75rem;
+}
+
+.skills-progress {
+  padding: 38px;
+  background: #ffffff;
+  border: 1px solid #e6e8f2;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(34, 40, 88, 0.09);
+}
+
+.skill-item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.skill-info {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #344054;
+  font-weight: 700;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 11px;
+  overflow: hidden;
+  background: #e8e9f5;
+  border-radius: 999px;
+}
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(90deg, #424265, #6868f0);
+  border-radius: inherit;
+}
+
+.skill-html {
+  width: 95%;
+}
+
+.skill-javascript {
+  width: 85%;
+}
+
+.skill-design {
+  width: 90%;
+}
+
+.skill-git {
+  width: 80%;
+}
+
+@media (max-width: 900px) {
+  .skills-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+}
+
+@media (max-width: 620px) {
+  .skills-section {
+    padding: 80px 20px;
+  }
+
+  .skills-progress {
+    padding: 27px 22px;
+  }
+
+  .skills-content h3 {
+    font-size: 1.55rem;
+  }
+}
