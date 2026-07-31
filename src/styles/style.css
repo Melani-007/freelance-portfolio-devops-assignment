@@ -527,3 +527,129 @@ img {
     font-size: 1.5rem;
   }
 }
+
+/* =========================
+   Services Section
+========================= */
+
+.services-section {
+  padding: 110px 24px;
+  background: #f7f8ff;
+}
+
+.section-container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #5858e8;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.section-heading h2 {
+  margin-bottom: 18px;
+  color: #151d31;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
+
+.section-heading p {
+  color: #667085;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  padding: 34px;
+  background: #ffffff;
+  border: 1px solid #e6e8f2;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(34, 40, 88, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #5b5ce2;
+  box-shadow: 0 24px 55px rgba(54, 55, 130, 0.15);
+}
+
+.service-number {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 25px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #424265, #5b5ce2);
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  color: #172033;
+  font-size: 1.35rem;
+}
+
+.service-card p {
+  margin-bottom: 24px;
+  color: #667085;
+  line-height: 1.75;
+}
+
+.service-link {
+  color: #5253dc;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .services-section {
+    padding: 80px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+    text-align: left;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 28px;
+  }
+}
