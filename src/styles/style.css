@@ -527,3 +527,380 @@ img {
     font-size: 1.5rem;
   }
 }
+
+/* =========================
+   Services Section
+========================= */
+
+.services-section {
+  padding: 110px 24px;
+  background: #f7f8ff;
+}
+
+.section-container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #5858e8;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.section-heading h2 {
+  margin-bottom: 18px;
+  color: #151d31;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
+
+.section-heading p {
+  color: #667085;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  padding: 34px;
+  background: #ffffff;
+  border: 1px solid #e6e8f2;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(34, 40, 88, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #5b5ce2;
+  box-shadow: 0 24px 55px rgba(54, 55, 130, 0.15);
+}
+
+.service-number {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 25px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #424265, #5b5ce2);
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  color: #172033;
+  font-size: 1.35rem;
+}
+
+.service-card p {
+  margin-bottom: 24px;
+  color: #667085;
+  line-height: 1.75;
+}
+
+.service-link {
+  color: #5253dc;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .services-section {
+    padding: 80px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+    text-align: left;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 28px;
+  }
+}
+
+/* =========================
+   Projects Section
+========================= */
+
+.projects-section {
+  padding: 110px 24px;
+  background: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.project-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e6e8f2;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(34, 40, 88, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 60px rgba(54, 55, 130, 0.16);
+}
+
+.project-image {
+  min-height: 230px;
+  padding: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.project-image span {
+  padding: 9px 15px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.project-image-one {
+  background: linear-gradient(135deg, #343472, #6868f0);
+}
+
+.project-image-two {
+  background: linear-gradient(135deg, #174c64, #35a6b8);
+}
+
+.project-image-three {
+  background: linear-gradient(135deg, #663b7a, #b45cc8);
+}
+
+.project-content {
+  padding: 30px;
+}
+
+.project-category {
+  margin-bottom: 9px;
+  color: #5858e8;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-content h3 {
+  margin-bottom: 14px;
+  color: #172033;
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.project-content > p:not(.project-category) {
+  margin-bottom: 22px;
+  color: #667085;
+  line-height: 1.75;
+}
+
+.project-link {
+  color: #5253dc;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .projects-section {
+    padding: 80px 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    min-height: 200px;
+  }
+
+  .project-content {
+    padding: 26px;
+  }
+}
+
+/* =========================
+   Skills Section
+========================= */
+
+.skills-section {
+  padding: 110px 24px;
+  background: #f7f8ff;
+}
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 70px;
+}
+
+.skills-content h3 {
+  margin-bottom: 18px;
+  color: #172033;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.skills-content > p {
+  margin-bottom: 28px;
+  color: #667085;
+  line-height: 1.8;
+}
+
+.skills-list {
+  display: grid;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  position: relative;
+  padding-left: 32px;
+  color: #344054;
+  font-weight: 600;
+}
+
+.skills-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: #5858e8;
+  border-radius: 50%;
+  font-size: 0.75rem;
+}
+
+.skills-progress {
+  padding: 38px;
+  background: #ffffff;
+  border: 1px solid #e6e8f2;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(34, 40, 88, 0.09);
+}
+
+.skill-item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.skill-info {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #344054;
+  font-weight: 700;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 11px;
+  overflow: hidden;
+  background: #e8e9f5;
+  border-radius: 999px;
+}
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(90deg, #424265, #6868f0);
+  border-radius: inherit;
+}
+
+.skill-html {
+  width: 95%;
+}
+
+.skill-javascript {
+  width: 85%;
+}
+
+.skill-design {
+  width: 90%;
+}
+
+.skill-git {
+  width: 80%;
+}
+
+@media (max-width: 900px) {
+  .skills-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+}
+
+@media (max-width: 620px) {
+  .skills-section {
+    padding: 80px 20px;
+  }
+
+  .skills-progress {
+    padding: 27px 22px;
+  }
+
+  .skills-content h3 {
+    font-size: 1.55rem;
+  }
+}
