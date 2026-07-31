@@ -23,3 +23,23 @@ if (menuButton && navLinks) {
     });
   });
 }
+// Contact form submission
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+if (contactForm && formMessage) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const nameInput = document.getElementById("name");
+    const userName = nameInput.value.trim();
+
+    formMessage.textContent = `Thank you, ${userName}! Your message has been received.`;
+
+    contactForm.reset();
+
+    setTimeout(() => {
+      formMessage.textContent = "";
+    }, 5000);
+  });
+}
