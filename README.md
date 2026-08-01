@@ -85,3 +85,14 @@ freelance-portfolio-devops-assignment/
 ├── package.json
 ├── package-lock.json
 └── README.md
+
+---
+
+## Project Status
+
+The project has been successfully completed, tested and deployed using GitHub Pages.
+
+- Development Status: Complete
+- CI Status: Passing
+- Deployment Status: Live
+- Final Branch: Main
