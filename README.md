@@ -30,6 +30,41 @@ The project demonstrates collaborative software development using Git, GitHub, f
 | Student 2 | Maneesha Kavindi | ITBIN-2414-0005 | Full-Stack Developer |
 
 ---
+## Individual Contributions
+
+### Student 1 – Melani Adithya
+
+**Role: DevOps Engineer**
+
+- Created and configured the public GitHub repository
+- Created and maintained the `main`, `develop` and feature branches
+- Developed the responsive navigation menu
+- Developed the hero section
+- Developed the about section
+- Added the contact-form JavaScript interaction
+- Created the GitHub Actions Continuous Integration workflow
+- Configured automatic linting, testing and build validation
+- Created the GitHub Pages deployment workflow
+- Managed pull requests, reviews and production merges
+- Managed the final GitHub Pages deployment
+- Completed and updated the final project documentation
+
+### Student 2 – Maneesha Kavindi
+
+**Role: Full-Stack Developer**
+
+- Developed the responsive services section
+- Developed the projects portfolio section
+- Developed the skills and expertise section
+- Developed the contact-form HTML structure
+- Developed the responsive contact-section styling
+- Developed the website footer structure
+- Developed the responsive footer styling
+- Tested desktop, tablet and mobile responsiveness
+- Reviewed and approved Student 1 pull requests
+- Participated in the intentional README merge conflict
+- Resolved and committed the README merge conflict
+- Supported final website functionality and layout testing
 
 ## Website Features
 
