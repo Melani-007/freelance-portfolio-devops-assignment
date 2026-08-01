@@ -1,4 +1,4 @@
-# Freelance Portfolio Website - Nova Studio
+# Nova Creative Studio Freelance Portfolio Website
 
 ## Project Description
 
