@@ -97,7 +97,17 @@ The project demonstrates collaborative software development using Git, GitHub, f
 - Live Server
 
 ---
+## Branch Strategy
 
+We followed a standard Git Flow branching model:
+
+- `main` - Production-ready branch, protected and automatically deployed.
+- `develop` - Integration branch used to combine and test completed features.
+- `feature/*` - Individual feature branches used by team members.
+
+All major changes were developed in feature branches and merged through pull requests after peer review.
+
+---
 ## Project Structure
 
 ```text
@@ -106,6 +116,9 @@ freelance-portfolio-devops-assignment/
 │   └── workflows/
 │       ├── ci.yml
 │       └── deploy.yml
+├── docs/
+│   ├── branch-protection.md
+│   └── merge-conflict-resolution.md
 ├── scripts/
 │   ├── build.js
 │   └── test.js
@@ -120,6 +133,7 @@ freelance-portfolio-devops-assignment/
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
 
 ---
 
@@ -130,4 +144,72 @@ The project has been successfully completed, tested and deployed using GitHub Pa
 - Development Status: Complete
 - CI Status: Passing
 - Deployment Status: Live
-- Final Branch: Main
+- Final Branch: `main`
+
+---
+## Setup & Installation Instructions
+
+### Prerequisites
+
+- Git
+- Node.js 18 or higher
+- npm
+- Visual Studio Code
+
+### Installation
+
+```bash
+git clone https://github.com/Melani-007/freelance-portfolio-devops-assignment.git
+cd freelance-portfolio-devops-assignment
+npm install
+npm run lint
+npm test
+npm run build
+```
+
+To view the website locally, open `src/index.html` using Live Server.
+
+---
+## CI/CD Deployment Process
+
+The project uses GitHub Actions for Continuous Integration and Continuous Deployment.
+
+### Continuous Integration
+
+The CI workflow runs on pushes to `main`, `develop`, and `feature/**` branches and on pull requests to `main` and `develop`.
+
+The CI pipeline performs:
+
+- Dependency installation
+- Lint validation
+- Automated testing
+- Project build validation
+
+### Continuous Deployment
+
+When approved changes are merged into the `main` branch, the deployment workflow automatically builds and deploys the website to GitHub Pages.
+
+---
+## Challenges & Resolutions
+
+### Merge Conflict
+
+Both students intentionally edited the same README content from separate feature branches. Git detected a merge conflict, which was manually resolved and committed successfully.
+
+### PowerShell Execution Policy
+
+PowerShell initially blocked npm scripts. The issue was resolved by using `npm.cmd` or Command Prompt.
+
+### Branch Protection
+
+The `main` branch was protected using pull request approval, required CI status checks, deletion protection and blocked force pushes.
+
+### GitHub Pages Deployment
+
+The final website was successfully deployed automatically through GitHub Actions.
+
+---
+## Documentation
+
+- [Branch Protection Documentation](docs/branch-protection.md)
+- [Merge Conflict Resolution Documentation](docs/merge-conflict-resolution.md) 
